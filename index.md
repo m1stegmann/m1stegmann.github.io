@@ -1,3 +1,3 @@
 # Demo
 
-Demo Text
+ [Search Engine Test](/searchenginetest/)
