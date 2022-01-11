@@ -2,6 +2,10 @@
 
 <head>
     <title>GTM Demo</title>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>    
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -15,12 +19,19 @@
 </head>
 
 <body>
+    <h1>GTM Demo</h1>
+
+    <script>
+    dataLayer.push({
+        'event': 'Test-Event 1',
+        'product': 'Das Vorsorge-Set [SP04111005]',
+        'var1': 'Wert von Website'
+        });
+    </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCSQW8S" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+        style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <h1>GTM Demo</h1>
 </body>
-
 </html>
 Hello World
