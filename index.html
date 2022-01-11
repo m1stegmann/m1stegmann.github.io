@@ -5,11 +5,6 @@
     <script>
         window.dataLayer = window.dataLayer || [];
     </script>    
-    <script>
-        dataLayer.push({
-            'product': 'Das Vorsorge-Set [SP04111005]'
-            });
-        </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -26,13 +21,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End Google Tag Manager (noscript) -->
     <h1>GTM Demo</h1>
     <main>
-        Statischer Text direkt im HTML
+        <p>Statischer Text direkt im HTML</p>
+        <button onclick="dataLayer.push({'event': 'login'});">Login Event</button>
     </main>
 
     <script>
     dataLayer.push({
-        'event': 'Test-Event 1',
-        'var1': 'Wert von Website'
+        'var1': 'Wert von Website',
+        'product': 'Das Vorsorge-Set [SP04111005]'
         });
     </script>
 </body>
